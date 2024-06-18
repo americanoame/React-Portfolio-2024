@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/herobg.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.main-nav {
+  width: 100%;
+  background-color: var(--color-black);
+  box-shadow: var(--box-shadow);
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 75rem; 
+  margin: 0 auto;
+  height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.name {
+  color: var(--color-white);
+}
+
+.logo {
+  width: 2.5rem;
+}
+
+.middle-logo {
+  color: var(--color-gold-ish);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.nav-content-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: auto;
+}
+
+.nav-btn {
+  list-style-type: none;
+}
+
+.create-btn {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 0.9rem;
+}
+
+.create-btn:hover {
+  color: var(--color-gold-ish);
+  transform: scale(1.1);
+}
+
+.main-nav.sticky-nav {
+  color: var(--color-white);
+  position: sticky;
+  top: 0;
+  transform: translateY(-60px);
+  animation: StickyNav 0.3s ease forwards;
+}
+
+@keyframes StickyNav {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Small Phones (max-width: 575px) */
+@media screen and (max-width: 575px) {
+  .nav-content-right {
+    display: inline-block;
+    color: var(--color-white);
+  }
+
+  .nav-btn {
+    padding: 1rem;
+  }
+}
+
+/* Large Phones (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  .main-nav .center {
+    font-size: 1rem; /* 16px */
+    margin-left: 0.125rem; /* 2px */
+  }
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+  }
+}
+
+/* Tablets (max-width: 991px) */
+
+/* Desktops (max-width: 1199px) */
