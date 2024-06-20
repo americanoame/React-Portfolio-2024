@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +11,16 @@ html {
 
 :root {
   --box-shadow: rgba(60, 64, 67, 0.15) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+  --card-box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0, rgba(224, 203, 10, 0.854) 0 2px 4px 3px;
   --color-black: #000;
   --color-white: #fff;
-  --color-gold-ish: #d2b420;
+  --color-gold: #d2b420;
+  --color-gold-ish: #ffd500;
+  --color-gray: rgb(154, 152, 152);
+  --color-gray-ish: rgba(254, 254, 254, 0.963);
+  --btn-background-color: #d2c8992c;
+  --btn-background-color-ish: #817a5a2c;
+  --btn-light-box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0, rgba(240, 233, 31, 0.875) 0 2px 4px 3px;
+  --color-yellow: #e1e1154b;
+  --color-yelow-ish: #b4a71b42;
 }
