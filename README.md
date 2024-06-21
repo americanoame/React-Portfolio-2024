@@ -1,8 +1,5 @@
 ## 🖥️ React-Portfolio-2024
 
-**Frontend:**
-
-# Showcase
 
 <table>
   <tr>
