@@ -23,4 +23,13 @@ html {
   --btn-light-box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0, rgba(240, 233, 31, 0.875) 0 2px 4px 3px;
   --color-yellow: #e1e1154b;
   --color-yelow-ish: #b4a71b42;
+  --color-dark-gold: #816c03;
+  --color-faded-gray: #c7c5b374;
+  --color-faded-gray-ish: #edede974;
+  --color-bage-gray: #c7c5b3;
+  --color-golsish: #d5c42874;
+  --color-blackish: #555;
+  --color-grey-white: #ccc;
+  --color-black-transparent: #b4bbc31d;
+  --color-black-transp-hover: #316fb71d;
 }
