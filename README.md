@@ -9,7 +9,7 @@
    <td><img src="https://github.com/americanoame/React-Projects-Display/assets/77306236/785e165d-2b61-4fc6-804d-52ddfd5f4ad1"></td>
   </tr>
   <tr>
-   <td><img src="https://github.com/americanoame/React-Projects-Display/assets/77306236/aa63b543-d88a-4f10-8fa8-1847e5bf63ea"></td>
+   <td><img src="https://github.com/americanoame/React-Portfolio-2024/assets/77306236/25edcfc8-5b7f-438b-9ded-6c24f0b4bd40"></td>
   </tr>
 </table>
 
