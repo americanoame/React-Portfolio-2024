@@ -19,29 +19,20 @@ const Hero = ({ index }) => {
   const techImages = [img3, img4, img5, img6, img7, img8, img9, img10, img11];
 
   const downloadFileAtURL = async (url) => {
-    try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      const blob = await response.blob();
-      const blobURL = window.URL.createObjectURL(blob);
-      
-      const fileName = url.split('/').pop();
-      const aTag = document.createElement('a');
-      aTag.href = blobURL;
-      aTag.setAttribute('download', fileName);
-      document.body.appendChild(aTag);
-      aTag.click();
-      
-      // Cleanup
-      aTag.remove();
-      
-    } catch (error) {
-      console.error('Error downloading the file:', error);
-    }
+    fetch(url)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const blobURL = window.URL.createObjectURL(new Blob([blob]));
+
+        const fileName = url.split('/').pop();
+        const aTag = document.createElement('a');
+        aTag.href = blobURL;
+        aTag.setAttribute('download', fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+      });
   };
-  
 
   return (
     <>
@@ -98,11 +89,17 @@ const Hero = ({ index }) => {
                 </div>
               </div>
               <p className="apresentation">
-                <span className="first-letter">H</span>ello, everyone! I&apos;m thrilled to share that Im a recent graduate in software engineering. Throughout my educational journey, I&apos;ve had the opportunity to immerse myself in the world of technology, learning the ins and outs of
-                software development, programming languages, and problem-solving methodologies.
+                <span className="first-letter">H</span>ello, everyone! I&apos;m thrilled to share that Im a recent graduate in software engineering. Throughout my educational journey, I&apos;ve had the opportunity to immerse myself in the world of technology, learning the ins and
+                outs of software development, programming languages, and problem-solving methodologies.
               </p>
               <div className="btn-container">
-                <Link onClick={() => { downloadFileAtURL(Resume1) }} to="/project" className="btn primary">
+                <Link
+                  onClick={() => {
+                    downloadFileAtURL(Resume1);
+                  }}
+                  to="/project"
+                  className="btn primary"
+                >
                   Download CV
                 </Link>
                 <Link to="/project" className="btn light">
