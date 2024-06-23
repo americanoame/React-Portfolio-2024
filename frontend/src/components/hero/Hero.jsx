@@ -101,12 +101,11 @@ const Hero = ({ index }) => {
                   onClick={() => {
                     downloadFileAtURL(Resume1);
                   }}
-                  to="/project"
                   className="btn primary"
                 >
                   Download CV
                 </button>
-                <button to="/project" className="btn light">
+                <button href="#project" className="btn light">
                   My Works
                 </button>
               </div>
