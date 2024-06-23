@@ -1,4 +1,3 @@
-
 import image from '../../assets/hero-img.jpg';
 import img from '../../assets/inovation.png';
 import img2 from '../../assets/creator.png';
