@@ -1,11 +1,5 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-
 import image from '../../assets/hero-img.jpg';
-
-import { fadeIn } from '../../utils/motion';
-import Tilt from 'react-parallax-tilt';
-
 import img from '../../assets/inovation.png';
 import img2 from '../../assets/creator.png';
 import img3 from '../../assets/tech/mongodb.png';
@@ -50,45 +44,35 @@ const Hero = ({ index }) => {
             </div>
             <div className="col-md-6 col-sm-12 right-section">
               <div className="row">
-                <motion.div className="col-md-6 col-sm-12" variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-                  <Tilt
-                    options={{
-                      max: 45,
-                      scale: 1,
-                      speed: 450,
-                    }}
-                  >
-                    <div className="card">
-                      <div className="degree-container">
-                        <img src={img2} alt="Education" />
-                        <h4>Degree</h4>
-                        <p>
-                          Rutger University
-                          <br />
-                          Software engineer Bootcamp
-                        </p>
-                      </div>
+                <div className="col-md-6 col-sm-12">
+                  <div className="card">
+                    <div className="degree-container">
+                      <img src={img2} alt="degree" />
+                      <h4>Degree</h4>
+                      <p>
+                        Rutger University
+                        <br />
+                        Software engineer Bootcamp
+                      </p>
                     </div>
-                  </Tilt>
-                </motion.div>
-                <motion.div variants={fadeIn} initial="hidden" animate="visible" className="col-md-6">
-                  <Tilt>
-                    <div className="card">
-                      <div className="degree-container">
-                        <img src={img} alt="Passionate for" />
-                        <h4>Passionate</h4>
-                        <p>
-                          Ecommerce
-                          <br />
-                          Frontend and backend Development
-                        </p>
-                      </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="card">
+                    <div className="degree-container">
+                      <img src={img} alt="Passionate for" />
+                      <h4>Passionate</h4>
+                      <p>
+                        Ecommerce
+                        <br />
+                        Frontend and backend Development
+                      </p>
                     </div>
-                  </Tilt>
-                </motion.div>
+                  </div>
+                </div>
               </div>
               <p className="apresentation">
-                <span className="first-letter">H</span>ello, everyone! Im thrilled to share that Im a recent graduate in software engineering. Throughout my educational journey, Ive had the opportunity to immerse myself in the world of technology, learning the ins and outs of
+                <span className="first-letter">H</span>ello, everyone! I&apos;m thrilled to share that Im a recent graduate in software engineering. Throughout my educational journey, I&apos;ve had the opportunity to immerse myself in the world of technology, learning the ins and outs of
                 software development, programming languages, and problem-solving methodologies.
               </p>
               <div className="btn-container">
