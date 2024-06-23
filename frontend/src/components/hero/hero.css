@@ -221,6 +221,14 @@
     margin-left: 2.3rem;
   }
 
+  .degree-container h4 {
+     font-size: 1.5rem;
+  }
+
+  .degree-container p {
+    font-size: 1.1rem;
+  }
+
   .title-tech-container img {
     border-radius: 100%;
     width: 60%;
