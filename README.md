@@ -20,7 +20,10 @@
 ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
 
 **Deployed On:**
-![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+```
+https://americanoame.github.io/React-Portfolio-2024
+```
 
 - Two steps to run the application
 
@@ -31,3 +34,5 @@ npm i
 ```
 npm run dev
 ```
+
+
