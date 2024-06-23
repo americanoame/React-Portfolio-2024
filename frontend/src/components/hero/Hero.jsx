@@ -18,19 +18,24 @@ const Hero = ({ index }) => {
   const techImages = [img3, img4, img5, img6, img7, img8, img9, img10, img11];
 
   const downloadFileAtURL = async (url) => {
-    fetch(url)
-      .then((response) => response.blob())
-      .then((blob) => {
-        const blobURL = window.URL.createObjectURL(new Blob([blob]));
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const blob = await response.blob();
+      const blobURL = window.URL.createObjectURL(new Blob([blob]));
 
-        const fileName = url.split('/').pop();
-        const aTag = document.createElement('a');
-        aTag.href = blobURL;
-        aTag.setAttribute('download', fileName);
-        document.body.appendChild(aTag);
-        aTag.click();
-        aTag.remove();
-      });
+      const fileName = url.split('/').pop();
+      const aTag = document.createElement('a');
+      aTag.href = blobURL;
+      aTag.setAttribute('download', fileName);
+      document.body.appendChild(aTag);
+      aTag.click();
+      aTag.remove();
+    } catch (error) {
+      console.error('Error downloading the file:', error);
+    }
   };
 
   return (
