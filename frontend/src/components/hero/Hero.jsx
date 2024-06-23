@@ -11,11 +11,37 @@ import img8 from '../../assets/tech/html.png';
 import img9 from '../../assets/tech/typescript.png';
 import img10 from '../../assets/tech/css.png';
 import img11 from '../../assets/tech/git.png';
+import Resume1 from '../../assets/Resume1.pdf';
 
 import './hero.css';
 
 const Hero = ({ index }) => {
   const techImages = [img3, img4, img5, img6, img7, img8, img9, img10, img11];
+
+  const downloadFileAtURL = async (url) => {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const blob = await response.blob();
+      const blobURL = window.URL.createObjectURL(blob);
+      
+      const fileName = url.split('/').pop();
+      const aTag = document.createElement('a');
+      aTag.href = blobURL;
+      aTag.setAttribute('download', fileName);
+      document.body.appendChild(aTag);
+      aTag.click();
+      
+      // Cleanup
+      aTag.remove();
+      window.URL.revokeObjectURL(blobURL);
+    } catch (error) {
+      console.error('Error downloading the file:', error);
+    }
+  };
+  
 
   return (
     <>
@@ -76,7 +102,7 @@ const Hero = ({ index }) => {
                 software development, programming languages, and problem-solving methodologies.
               </p>
               <div className="btn-container">
-                <Link to="/project" className="btn primary">
+                <Link onClick={() => { downloadFileAtURL(Resume1) }} to="/project" className="btn primary">
                   Download CV
                 </Link>
                 <Link to="/project" className="btn light">
