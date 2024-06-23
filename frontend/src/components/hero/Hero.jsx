@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 import image from '../../assets/hero-img.jpg';
 import img from '../../assets/inovation.png';
 import img2 from '../../assets/creator.png';
@@ -93,7 +93,7 @@ const Hero = ({ index }) => {
                 outs of software development, programming languages, and problem-solving methodologies.
               </p>
               <div className="btn-container">
-                <Link
+                <button
                   onClick={() => {
                     downloadFileAtURL(Resume1);
                   }}
@@ -101,10 +101,10 @@ const Hero = ({ index }) => {
                   className="btn primary"
                 >
                   Download CV
-                </Link>
-                <Link to="/project" className="btn light">
+                </button>
+                <button to="/project" className="btn light">
                   My Works
-                </Link>
+                </button>
               </div>
             </div>
           </div>
