@@ -22,7 +22,7 @@
 **Deployed On:**
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 ```
-https://americanoame.github.io/React-Portfolio-2024
+#### Check the deployed link: https://americanoame.github.io/React-Portfolio-2024/
 ```
 
 - Two steps to run the application
