@@ -36,7 +36,7 @@ const Hero = ({ index }) => {
       
       // Cleanup
       aTag.remove();
-      window.URL.revokeObjectURL(blobURL);
+      
     } catch (error) {
       console.error('Error downloading the file:', error);
     }
