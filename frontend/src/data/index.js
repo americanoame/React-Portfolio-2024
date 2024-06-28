@@ -20,9 +20,9 @@ const projects = [
 
     image: Image4,
     role: 'frontend, backend',
-    desc: 'React-Redux-Thunk-cart',
-    demo: '',
-    github: 'https://github.com/americanoame/Redux-Thunk-Sopping-Cart/tree/main',
+    desc: 'State-Management-with-Redux',
+    demo: 'https://americanas-f1732000c767.herokuapp.com/',
+    github: 'https://github.com/americanoame/State-Management-with-Redux',
   },
 
   {
