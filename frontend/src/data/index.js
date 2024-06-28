@@ -1,7 +1,7 @@
 import Image1 from '../assets/RUT.png';
 import Image2 from '../assets/MDV.png';
 import Image3 from '../assets/Google.png';
-import Image4 from '../assets/redux-toolkit.png';
+import Image4 from '../assets/ecommerce.png';
 
 const projects = [
   {
@@ -21,7 +21,7 @@ const projects = [
     image: Image4,
     role: 'frontend, backend',
     desc: 'React-Redux-Thunk-cart',
-    demo: 'https://github.com/americanoame/Redux-Thunk-Sopping-Cart/tree/main',
+    demo: '',
     github: 'https://github.com/americanoame/Redux-Thunk-Sopping-Cart/tree/main',
   },
 
@@ -31,8 +31,8 @@ const projects = [
     image: Image2,
     role: 'frontend, backend',
     desc: 'MDV-controller-Tech-Blog',
-    demo: 'https://github.com/americanoame/MDV-controller-Tech-Blog',
-    github: 'https://mdv-controller.herokuapp.com/',
+    demo: 'https://mdv-controller.herokuapp.com/',
+    github: 'https://github.com/americanoame/MDV-controller-Tech-Blog',
   },
   {
     id: 3,
