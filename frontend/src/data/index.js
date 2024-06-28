@@ -1,6 +1,6 @@
 import Image1 from '../assets/RUT.png';
 import Image2 from '../assets/MDV.png';
-import Image3 from '../assets/Google.png';
+import Image3 from '../assets/noteTaker.png';
 import Image4 from '../assets/ecommerce.png';
 
 const projects = [
@@ -39,9 +39,9 @@ const projects = [
 
     image: Image3,
     role: 'frontend, backend',
-    desc: 'MERN-Book-Search-Engine',
-    demo: 'https://andre-book-search.herokuapp.com',
-    github: 'https://github.com/americanoame/MERN-Book-Search-Engine',
+    desc: 'Note-Taker',
+    demo: 'https://note-taker-andre.herokuapp.com/',
+    github: 'https://github.com/americanoame/Note-Taker',
   },
 ];
 
