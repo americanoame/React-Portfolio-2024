@@ -11,6 +11,7 @@ import img9 from '../../assets/tech/typescript.png';
 import img10 from '../../assets/tech/css.png';
 import img11 from '../../assets/tech/git.png';
 import Resume1 from '../../assets/Resume1.pdf';
+import forRealResume from '../../assets/forRealResume.pdf'
 
 import './hero.css';
 
@@ -99,7 +100,7 @@ const Hero = ({ index }) => {
               <div className="btn-container">
                 <button
                   onClick={() => {
-                    downloadFileAtURL(Resume1);
+                    downloadFileAtURL(forRealResume);
                   }}
                   className="btn primary"
                 >
