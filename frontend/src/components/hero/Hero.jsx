@@ -10,7 +10,7 @@ import img8 from '../../assets/tech/html.png';
 import img9 from '../../assets/tech/typescript.png';
 import img10 from '../../assets/tech/css.png';
 import img11 from '../../assets/tech/git.png';
-import Resume1 from '../../assets/Resume1.pdf';
+
 import forRealResume from '../../assets/forRealResume.pdf'
 
 import './hero.css';
@@ -93,9 +93,9 @@ const Hero = ({ index }) => {
                   </div>
                 </div>
               </div>
-              <p className="apresentation">
-                <span className="first-letter">H</span>ello, everyone! I&apos;m thrilled to share that Im a recent graduate in software engineering. Throughout my educational journey, I&apos;ve had the opportunity to immerse myself in the world of technology, learning the ins and
-                outs of software development, programming languages, and problem-solving methodologies.
+              
+              <p className="apresentation"> 
+              <span className="first-letter">I</span>   &apos;m an experienced software developer with expertise in both frontend and backend technologies. My career has involved mastering software development, programming languages, and problem-solving methodologies across the entire stack.
               </p>
               <div className="btn-container">
                 <button
