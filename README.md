@@ -1,7 +1,4 @@
-
-<table>
-  <tr>
-    <td><img src="https://github.com/americanoame/React-Projects-Display/assets/77306236/64605d3b-824d-48c8-a50b-ee29e026a6b0"><td>
+ src="https://github.com/americanoame/React-Projects-Display/assets/77306236/64605d3b-824d-48c8-a50b-ee29e026a6b0"><td>
   </tr>
   <tr>
    <td><img src="https://github.com/americanoame/React-Projects-Display/assets/77306236/785e165d-2b61-4fc6-804d-52ddfd5f4ad1"></td>
