@@ -1,4 +1,5 @@
- src="https://github.com/americanoame/React-Projects-Display/assets/77306236/64605d3b-824d-48c8-a50b-ee29e026a6b0"><td>
+  <tr>
+  <td><img src="https://github.com/user-attachments/assets/8be83f60-98bd-496d-a3a0-857620dbb296"></td>
   </tr>
   <tr>
    <td><img src="https://github.com/americanoame/React-Projects-Display/assets/77306236/785e165d-2b61-4fc6-804d-52ddfd5f4ad1"></td>
@@ -16,14 +17,13 @@
 
 #### 🖥️ React-Portfolio-2024
 
-- This is my React portfolio, showcasing the projects I've built and the skills I've developed. 
+- This is my React portfolio, showcasing the projects I've built and the skills I've developed.
 - Each project demonstrates my expertise in front-end and backend development, with a focus on creating dynamic and responsive user interfaces using React.
 
 **Deployed On:**
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
 #### Check the deployed link: https://americanoame.github.io/React-Portfolio-2024/
-
 
 - Two steps to run the application
 
@@ -34,5 +34,3 @@ npm i
 ```
 npm run dev
 ```
-
-
